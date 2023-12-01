@@ -1,0 +1,100 @@
+.app
+{
+    background-color: #073137;
+    min-height: 100vh;
+}
+
+.app__form
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.app__input
+{
+    border: none;
+    padding: 0.4em 1em;
+    border-radius: 0.5em 0 0 0.5em;
+}
+
+.app__btn
+{
+    display: block;
+    border: none;
+    width: 7em;
+    background-color: rgb(81, 163, 43);
+    padding: 0.4em ;
+    border-radius: 0 0.5em 0.5em 0;
+    color: white;
+    font-weight: 700;
+}
+
+.app__card-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+/*.app__title 
+{
+    display: flex;
+    justify-content: center;
+    color: rgb(81, 163, 43);
+    padding: 0.4em;
+    
+}*/
+
+/*.app__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0.4em;
+    font-size: 2em;
+    background: linear-gradient(to right, #ff5e62, #ffa947);
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra llamativa */
+   /* animation: rainbowGlow 2s infinite alternate;
+}
+
+@keyframes rainbowGlow {
+    0% {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        color: #ff5e62;
+    }
+    100% {
+        text-shadow: 0px 0px 20px rgba(255, 169, 71, 1);
+        color: #ffa947;
+    }
+}*/
+
+.app__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent; /* Hacemos el texto transparente para que solo se vea el fondo degradado */
+    padding: 0.4em;
+    font-size: 2em;
+    background: linear-gradient(to right, #ff5e62, #ffa947);
+    background-clip: text; /* Aplicamos el fondo solo a las letras */
+    -webkit-background-clip: text;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra llamativa */
+    animation: rainbowGlow 3s infinite alternate;
+}
+
+@keyframes rainbowGlow {
+    0% {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        color: transparent; 
+    }
+    100% {
+        text-shadow: 0px 0px 20px rgba(81, 163, 43, 1);
+        color: transparent; /* Hacemos el texto transparente para que solo se vea el fondo degradado */
+    }
+}
+
+
